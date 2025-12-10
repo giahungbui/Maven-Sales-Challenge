@@ -64,13 +64,13 @@ The data model was relatively clean; however, several important preprocessing st
 
 The following calculated fields and measures were created using **DAX** to support the dashboards:
 
-- Total Sales, Last Quarter Sales, Company Average Sales
-- Won Deals, Last Quarter Won Deals
-- Conversion Rate
-- Average Sales Value, Last Quarter Average Sales Value, Company Average Sales Value
-- Weeks to Close, Last Quarter Weeks to Close, Company Weeks to Close
-- Engaging Deals, Proposing Deals, Lost Deals
-- Potential Sales from Engaging Deals
+- Total Sales, Last Quarter Sales, Company Average Sales (Sum of close_value)
+- Won Deals, Last Quarter Won Deals (Count of deal_stage = 'Won')
+- Conversion Rate (Won Deals / (Won Deals + Lost Deals))
+- Average Sales Value, Last Quarter Average Sales Value, Company Average Sales Value (Total Sales / Won Deals)
+- Weeks to Close, Last Quarter Weeks to Close, Company Weeks to Close (Difference between engage_date and close_date)
+- Engaging Deals, Proposing Deals, Lost Deals (Count of deal_stage)
+- Potential Sales from Engaging Deals (Sum of sales_price from engaging deals)
 
 ---
 ## Data Modeling
@@ -86,6 +86,7 @@ To construct a unified analytical fact table, the following merges were performe
 - The `sales_pipeline` table was merged with the `products` table using the **product** field to enable product-level revenue and conversion analysis.
 - The `sales_teams` table was merged with `sales_pipeline` through the **sales_agent** field to integrate manager and team-level insights.
 - The `accounts` table was merged with `sales_pipeline` using the **account** field to support sector and customer-based performance analysis.
+- All dimension tables (`accounts`, `products`, `sales_teams`, and `Date Table`) filter the `sales_pipeline` table through **one-to-many** relationships.
 
 The resulting data model looks like this:
 ![Data Modeling](data_model.png)
