@@ -49,19 +49,61 @@ This dataset, available on Maven Analytics, contains B2B sales opportunities fro
   
 The dataset covers the period from October 2016 to December 2017 and supports detailed analysis of revenue performance, pipeline health, individual productivity, product effectiveness, sector profitability, and team-level comparisons.
 
-### Data Preparation
+---
+## Data Preparation
 
 The data model was relatively clean; however, several important preprocessing steps were required to ensure accuracy and analytical reliability:
-- In the sales pipeline table, the product name "GTXPro" was standardized to "GTX Pro" to match the products table. This was handled using Find & Replace in Power Query.
-- A merge between the sales pipeline and products table was performed using the product column to enable correct product revenue analysis.
-- The sales teams table was merged with the sales pipeline using the sales_agent field to integrate manager-level insights.
-- The accounts table was merged with sales pipeline using the account field to enable sector and customer analysis.
-- A dedicated Date Table was created to support:
-  - Quarter filtering
-  - Quarter-over-quarter (QoQ) analysis
-  - Trend visualisation
+
+- The product name **"GTXPro"** in the `sales_pipeline` table was standardized to **"GTX Pro"** to match the naming convention in the `products` table. This was handled using **Find & Replace in Power Query**.
+- Since five sales agents are missing from the sales pipeline table and there's no data to clarify this, it's presumed they are new hires who haven't yet begun to prospect opportunities.
+- Engaging deals without close dates were properly handled to prevent incorrect quarter assignments.
+- The missing values within the dataset are expected occurrences and should be retained in their current state.
+
+
+### Calculated Fields & Measures
+
+The following calculated fields and measures were created using **DAX** to support the dashboards:
+
+- Total Sales, Last Quarter Sales, Company Average Sales
+- Won Deals, Last Quarter Won Deals
+- Conversion Rate
+- Average Sales Value, Last Quarter Average Sales Value, Company Average Sales Value
+- Weeks to Close, Last Quarter Weeks to Close, Company Weeks to Close
+- Engaging Deals, Proposing Deals, Lost Deals
+- Potential Sales from Engaging Deals
 
 ---
+## Data Modeling
+A dedicated **Date Table** was created to serve as the central time dimension for the entire model. This enables:
+- Quarter-based filtering
+- Quarter-over-Quarter (QoQ) comparisons
+- Year-over-Year and trend analysis
+- Consistent time-based KPI calculations across all dashboards
+
+The Date Table drives all official time intelligence calculations using **close_date** as the primary reference.
+
+
+To construct a unified analytical fact table, the following merges were performed:
+
+- The `sales_pipeline` table was merged with the `products` table using the **product** field to enable product-level revenue and conversion analysis.
+- The `sales_teams` table was merged with `sales_pipeline` through the **sales_agent** field to integrate manager and team-level insights.
+- The `accounts` table was merged with `sales_pipeline` using the **account** field to support sector and customer-based performance analysis.
+
+The resulting data model looks like this:
+![Data Modeling](Data Modeling.png)
+
+--- 
+## Dashboard Planning
+
+Since the dashboard is designed for sales managers, usability is treated as the highest priority. The dashboard is optimized for:
+
+- Minimal training requirements
+- Clear and intuitive KPI presentation
+- Simple and consistent navigation
+- Strong visual hierarchy for quick interpretation
+
+The report is structured into four main pages, each serving a specific analytical purpose.
+
 ### 1. Quarterly Performance Overview
 
 This page enables team managers to efficiently monitor overall team performance alongside the results of individual sales agents. It provides a high-level performance snapshot for the selected quarter.
