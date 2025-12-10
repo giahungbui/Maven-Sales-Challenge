@@ -62,43 +62,72 @@ The data model was relatively clean; however, several important preprocessing st
   - Trend visualisation
 
 ---
-## Dashboard Planning
-
-Since the dashboard is designed for sales managers, usability was the top priority. The dashboard is optimized for:
-
-- Minimal training requirements
-- Clear KPI presentation
-- Simple navigation
-- Strong visual hierarchy
-
-The report is structured into four main pages, each with a specific analytical purpose.
-
 ### 1. Quarterly Performance Overview
-Team managers can use this page to efficiently monitor overall team performance alongside the individual results of each sales agent. The page will display these metrics using the following visuals:
-- KPI Cards:
+
+This page enables team managers to efficiently monitor overall team performance alongside the results of individual sales agents. It provides a high-level performance snapshot for the selected quarter.
+
+Key visuals include:
+
+- **KPI Cards**
   - Total Sales (current quarter, previous quarter, company average)
   - Average Deal Value (current quarter, previous quarter, company average)
   - Won Deals (current quarter, previous quarter, conversion rate)
   - Average Weeks to Close (current quarter, previous quarter, company average)
   - Engaging Deals (current quarter, potential value)
-- Total sales trend line by quarter for...
-- Sales Opportunities funnel by quarter for ... 
-- Performance by Agents table:
-  - Total sales
-  - Wins
-  - Conversion rate
-  - Average sale value
-  - Weeks to close
 
-### 2. Engaging Sales Opportunities 
-This page provides a detailed table of currently engaging opportunities. This enables managers to identify potential sales.
+- **Total Sales Trend Line**
+  - Displays total revenue performance by quarter to highlight growth patterns
 
-### 3. Sales by region  
-This page keeps track of sales by location, industry, and product category, allowing managers to identify market trends. This page will contain the following charts:
-- Choropleth map of sales by location
+- **Sales Opportunities Funnel**
+  - Visualizes deal distribution across pipeline stages for the selected quarter
+
+- **Performance by Agents Table**
+  - Total Sales  
+  - Won Deals  
+  - Conversion Rate  
+  - Average Deal Value  
+  - Average Weeks to Close  
+
+This page allows managers to quickly benchmark individuals against team and company performance.
+
+---
+
+### 2. Engaging Sales Opportunities
+
+This page provides a detailed table of currently engaging opportunities. It allows managers to:
+
+- Review active deals in progress
+- Identify high-potential revenue opportunities
+- Filter opportunities by sales agent and quarter
+- Support short-term revenue forecasting
+
+---
+
+### 3. Sales by Region
+
+This page tracks sales performance across geography, industry, and product categories to help identify market trends and revenue drivers.
+
+Key visuals include:
+
+- Choropleth map of total sales by location
 - Sales by industry
-- Top 5 accounts
-- Sales and conversion by product.
+- Top 5 customer accounts by total sales
+- Sales and conversion rate by product
+
+This page supports strategic market and product performance analysis.
+
+---
 
 ### 4. Performance by Teams
-This page allows managers to track their performance compared to other teams by quarter. This page will contain total sales, number of won deals, conversion rates, average sale value, and average weeks to close by manager.
+
+This page allows managers to track their team’s performance relative to other teams by quarter.
+
+Key metrics include:
+
+- Total Sales
+- Number of Won Deals
+- Conversion Rate
+- Average Deal Value
+- Average Weeks to Close
+
+This page supports internal benchmarking and helps highlight high-performing and underperforming teams.
