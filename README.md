@@ -191,14 +191,14 @@ A bar chart of **Sales by Sales Agent** allows users to click on an agent’s na
 
 A navigation button labeled **“See Sales Opportunities →”** is included to guide users to the detailed opportunities section.
 
-![Team Sales Performance](teams_sales_performance.png)
+![Team Sales Performance](team_sales_performance.png)
 
 ### 2. Engaging Sales Opportunities
 
 The Sales Opportunities page displays a detailed list of open and won opportunities, including potential value, stage, account, and assigned agent.  
 
 A slicer for **Sales Agent** was added to allow users to drill down into opportunities handled by a specific team member. Selecting an agent automatically filters the opportunity table.
-![Engaging Sales Opportunities](engaging_sales_opportunities.png)
+![Engaging Sales Opportunities](engaging-sales_opportunities.png)
 
 ### 3. Sales by Region
 
@@ -209,7 +209,7 @@ This page includes a filled map chart showing **Total Sales by Country**, enabli
 - Accounts Table  
 
 all interact with each other—selecting a region or product highlights related data across all visuals on this page.
-![Sales by Regions](sales_by_region.png)
+![Sales by Regions](sales_by_regions.png)
 
 ### 4. Performance by Teams
 
