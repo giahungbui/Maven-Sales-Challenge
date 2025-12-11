@@ -1,8 +1,16 @@
 # CRM Sales Performance Dashboard
-## Project Overview
+# Project Overview
 This project delivers an end-to-end Business Intelligence solution that transforms raw CRM data into actionable insights for MavenTech - a U.S.-based enterprise hardware company. The dashboard enables managers to evaluate performance across individuals, products, customers, and teams using interactive and intuitive Power BI reports.
 
-## Business Scenario
+Dataset Source: [CRM Sales Opportunities on Maven Analytics](https://mavenanalytics.io/data-playground/crm-sales-opportunities)
+
+Project Link: [Project Page at Maven Analytics](https://mavenanalytics.io/challenges/maven-sales-challenge)
+
+GitHub Link: [GitHub Repo](https://github.com/Benzxje/Maven-Sales-Challenge/tree/main)
+
+Power BI file: 
+
+# Business Scenario
 
 MavenTech recently deployed a new CRM platform but struggled to turn the collected data into meaningful insights. Sales managers lacked visibility into:
 - Quarterly performance trends
@@ -17,7 +25,7 @@ To address this, I developed a multi-page Power BI dashboard that allows manager
 
 This solution provides the visibility needed for performance evaluation, forecasting, and strategic decision-making.
 
-### Assumptions
+# Assumptions
 
 - Sales managers require both individual and team-level performance monitoring.  
 - Teams are allowed to compare performance across the business.  
@@ -26,7 +34,7 @@ This solution provides the visibility needed for performance evaluation, forecas
   - End-of-quarter sales pushes  
 - Dashboards must be easy to interpret, supported with tooltips and intuitive visuals.
 
-## Objective
+# Objective
 The main objective is to create an interactive dashboard that sales managers can use to answer the following questions:
 
 - How is the team performing this quarter?
@@ -36,7 +44,7 @@ The main objective is to create an interactive dashboard that sales managers can
 - Which products and customers generate the highest revenue?
   
 
-## Dataset
+# Dataset
 
 This dataset, available on Maven Analytics, contains B2B sales opportunities from a CRM database for a fictitious company, MavenTech, which sells computer hardware to large businesses. The dataset includes information on:
 
@@ -47,8 +55,8 @@ This dataset, available on Maven Analytics, contains B2B sales opportunities fro
   
 The dataset covers the period from October 2016 to December 2017 and supports detailed analysis of revenue performance, pipeline health, individual productivity, product effectiveness, sector profitability, and team-level comparisons.
 
----
-## Data Preparation
+
+# Data Preparation
 
 The data model was relatively clean; however, several important preprocessing steps were required to ensure accuracy and analytical reliability:
 
@@ -57,7 +65,7 @@ The data model was relatively clean; however, several important preprocessing st
 - The missing values within the dataset are expected occurrences and should be retained in their current state.
 
 
-## Calculated Fields & Measures
+# Calculated Fields & Measures
 
 The following calculated fields and measures were created using **DAX** to support the dashboards:
 
@@ -104,8 +112,8 @@ AVERAGEX(
 )
 ```
 
----
-## Data Modeling
+
+# Data Modeling
 A dedicated **Date Table** was created to serve as the central time dimension for the entire model. It drives all official time intelligence calculations using **close_date** as the primary reference. This enables:
 - Quarter-based filtering
 - Quarter-over-Quarter (QoQ) comparisons
@@ -125,8 +133,8 @@ The resulting data model looks like this:
 
 --- 
 
-## Dashboard building
-### 1. Team Sales Performance
+# The Dashboard 
+## 1. Team Sales Performance
 
 This page provides an immediate overview of how the team is performing in the current quarter. It is designed to help managers quickly identify trends, strengths, and potential performance issues.
 
@@ -143,7 +151,7 @@ Two dropdown slicers — Quarter and Manager — are included to enable flexible
 
 ![Team Sales Performance](team_sales_performance.png)
 
-### 2. Engaging Sales Opportunities
+## 2. Engaging Sales Opportunities
 
 This page is focused on pipeline analysis and gives managers a detailed view of all ongoing opportunities.
 
@@ -161,7 +169,7 @@ Selecting an agent dynamically filters the table to show only their opportunitie
 
 ![Engaging Sales Opportunities](engaging-sales_opportunities.png)
 
-### 3. Sales by Region
+## 3. Sales by Region
 
 This dashboard provides geographic and segment-based insights, helping managers understand where revenue is coming from and which markets or sectors are driving performance.
 
@@ -179,7 +187,7 @@ This page is especially useful for territory planning, market strategy, and iden
 
 ![Sales by Regions](sales_by_regions.png)
 
-### 4. Performance by Teams
+## 4. Performance by Teams
 
 This page helps managers evaluate how their team is performing relative to other teams and to the company average.
 
@@ -195,30 +203,41 @@ This page is valuable for leadership reporting, performance reviews, and resourc
 
 ![Performance by Teams](performance_by_teams.png)
 
-## Key Insights / Findings
+# Key Insights / Findings
 
-### Team & Individual Performance
+## Team & Individual Performance
 
 - Strong performance disparities exist between sales agents, especially in team Melvin and Celia.
 - Some agents close deals faster but with lower average value, while others close fewer but larger deals (Violet in Cara's team had 122 sales with a total of 123K, which is much lower than the average sales value).
 - Managers can clearly see who needs coaching in conversion or pipeline generation (In Dustin's team, the conversion rate in 2017 of Lajuana is 40%).
   
-### Product & Market Insights
+## Product & Market Insights
 
 - Certain product series generate consistently higher revenue across multiple regions (GTX Pro and GTX Plus Pro).
 - Some regions show high engagement but low conversion - indicating follow-up or pricing issues.
 
-### Pipeline Health
+## Pipeline Health
 - Several high-value opportunities remain in an “engaging” stage for extended periods.
 - Managers can quickly detect stalled deals and intervene early (Several engaging deals from 2016 that haven't been closed).
 
-### Team Benchmarking
+## Team Benchmarking
 - Some teams outperform the company average across most KPIs (Team Rocco appeared to have to highest average sales value and conversion rate) .
 - Underperforming teams often lag in conversion rates rather than quantity of deals (Team Melvin had the most sales and number of won sales but they had the lowest conversion rate across all teams).
 
-## Limitations of the Analysis
+# Limitations of the Analysis
 - Time period is fixed at 2016–2017; recent or real-world trends are not included.
 - Some agents do not appear in the pipeline table (assumed new hires).
 - The dataset includes the final deal value (close value) but not quantity sold or product breakdown, limiting deeper analysis.
 - Data only reflects CRM-recorded activities - offline or informal activities aren't captured.
 
+
+
+# Conclusion
+This project delivers a complete Business Intelligence solution that helps MavenTech sales leaders:
+- Understand team and individual performance at a glance
+- Analyse pipeline quality and identify stalled or high-value opportunities
+- Explore regional and industry performance to guide territory planning
+- Compare team performance against organisation benchmarks
+- Make data-driven decisions around coaching, resource allocation, and strategy
+
+Overall, the dashboard is fully interactive, filter-driven, and designed to support both strategic reviews and day-to-day decision-making.
