@@ -9,7 +9,7 @@ MavenTech recently deployed a new CRM platform but struggled to turn the collect
 - Individual agent performance
 - Product-level contribution
 - Team-level comparisons
-- 
+  
 To address this, I developed a multi-page Power BI dashboard that allows managers to analyse performance from three perspectives:
 - Sales representatives
 - Products, industries, and customers
