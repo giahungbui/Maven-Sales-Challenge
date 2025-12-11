@@ -64,10 +64,11 @@ The data model was relatively clean; however, several important preprocessing st
 - Engaging deals without close dates were properly handled to prevent incorrect quarter assignments.
 - The missing values within the dataset are expected occurrences and should be retained in their current state.
 
+# Key Metrics
 
 # Calculated Fields & Measures
 
-The following calculated fields and measures were created using **DAX** to support the dashboards:
+The following measures were created to calculate key performance indicators (KPIs) using **DAX** to support the dashboards:
 
 - Total Sales, Last Quarter Sales, Company Average Sales 
 - Won Deals, Last Quarter Won Deals 
@@ -222,7 +223,7 @@ This page is valuable for leadership reporting, performance reviews, and resourc
 
 ## Team Benchmarking
 - Some teams outperform the company average across most KPIs (Team Rocco appeared to have to highest average sales value and conversion rate) .
-- Underperforming teams often lag in conversion rates rather than quantity of deals (Team Melvin had the most sales and number of won sales but they had the lowest conversion rate across all teams).
+- Underperforming teams often lag in conversion rates rather than quantity of deals (Team Melvin had the most sales and number of won sales but they had the lowest conversion rate, indicating inefficiencies in closing and potential issues with qualification or follow-up discipline).
 
 # Limitations of the Analysis
 - Time period is fixed at 2016–2017; recent or real-world trends are not included.
