@@ -183,7 +183,7 @@ Key metrics include:
 This page supports internal benchmarking and helps highlight high-performing and underperforming teams.
 
 ## Dashboard building
-### 1. Quarterly Performance Overview
+### 1. Team Sales Performance
 
 The main Dashboard page provides a high-level summary of team performance. It displays KPIs such as **Total Sales**, **Win Rate**, **Number of Opportunities**, and **Average Deal Size**, all broken down by quarter.
 
@@ -191,13 +191,16 @@ A bar chart of **Sales by Sales Agent** allows users to click on an agent’s na
 
 A navigation button labeled **“See Sales Opportunities →”** is included to guide users to the detailed opportunities section.
 
-### 2. Sales Opportunities Page**
+![Team Sales Performance](teams_sales_performance.png)
+
+### 2. Engaging Sales Opportunities
 
 The Sales Opportunities page displays a detailed list of open and won opportunities, including potential value, stage, account, and assigned agent.  
 
 A slicer for **Sales Agent** was added to allow users to drill down into opportunities handled by a specific team member. Selecting an agent automatically filters the opportunity table.
+![Engaging Sales Opportunities](engaging_sales_opportunities.png)
 
-### 3. Sales by Region Page**
+### 3. Sales by Region
 
 This page includes a filled map chart showing **Total Sales by Country**, enabling geographic analysis of performance. Supporting visuals such as:
 
@@ -206,8 +209,9 @@ This page includes a filled map chart showing **Total Sales by Country**, enabli
 - Accounts Table  
 
 all interact with each other—selecting a region or product highlights related data across all visuals on this page.
+![Sales by Regions](sales_by_region.png)
 
-### 4. Team Performance Page**
+### 4. Performance by Teams
 
 The Team Performance page compares a manager’s team against other teams and against the company-wide average. Team performance indicators include:
 
@@ -217,4 +221,5 @@ The Team Performance page compares a manager’s team against other teams and ag
 - Opportunities Won  
 
 Reference lines representing the **company average** were added to provide context for each team's performance.
+![Performance by Teams](performance_by_teams.png)
 
