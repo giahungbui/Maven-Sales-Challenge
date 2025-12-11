@@ -131,7 +131,7 @@ To construct a unified analytical fact table, the following merges were performe
 The resulting data model looks like this:
 ![Data Modeling](data_model.png)
 
---- 
+ 
 
 # The Dashboard 
 ## 1. Team Sales Performance
