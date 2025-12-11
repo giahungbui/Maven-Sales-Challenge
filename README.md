@@ -1,21 +1,21 @@
-# CRM Sales Dashboard
+# CRM Sales Performance Dashboard
+## Project Overview
+This project delivers an end-to-end Business Intelligence solution that transforms raw CRM data into actionable insights for MavenTech - a U.S.-based enterprise hardware company. The dashboard enables managers to evaluate performance across individuals, products, customers, and teams using interactive and intuitive Power BI reports.
+
 ## Business Scenario
 
-MavenTech is a U.S.-based company specialising in enterprise hardware solutions. The company recently implemented a new CRM platform to manage sales opportunities, but leadership faced a critical challenge:
-
-Although large volumes of sales data were being collected, managers had limited visibility into:
-- Quarterly performance trends  
-- Individual sales effectiveness  
-- Product contribution  
-- Team-level performance comparisons  
-
-As a Business Intelligence Developer, I designed an **interactive Power BI dashboard system** that enables managers to analyse sales performance at three levels:
-
-- Individual sales representatives  
-- Products, industries, and customers  
+MavenTech recently deployed a new CRM platform but struggled to turn the collected data into meaningful insights. Sales managers lacked visibility into:
+- Quarterly performance trends
+- Individual agent performance
+- Product-level contribution
+- Team-level comparisons
+- 
+To address this, I developed a multi-page Power BI dashboard that allows managers to analyse performance from three perspectives:
+- Sales representatives
+- Products, industries, and customers
 - Sales teams (strategic comparison)
 
-This solution transforms raw CRM data into actionable management insights.
+This solution provides the visibility needed for performance evaluation, forecasting, and strategic decision-making.
 
 ### Assumptions
 
@@ -29,13 +29,11 @@ This solution transforms raw CRM data into actionable management insights.
 ## Objective
 The main objective is to create an interactive dashboard that sales managers can use to answer the following questions:
 
-- How is the overall team and each individual performing against our main KPIs?
-- Are there any team members who may need additional support in specific areas?
-- Is my team outperforming the business-wide average?
-- How does the team’s performance compare to the overall company average?
-- What are the quarter-over-quarter sales trends for each team?
-- How is each salesperson currently performing?
-- Which products are generating the highest sales?
+- How is the team performing this quarter?
+- Which sales agents are excelling or need support?
+- How do teams compare to one another and to company averages?
+- What are the quarter-over-quarter (QoQ) trends?
+- Which products and customers generate the highest revenue?
   
 
 ## Dataset
