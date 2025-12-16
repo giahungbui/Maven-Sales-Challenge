@@ -212,8 +212,8 @@ This page is valuable for leadership reporting, performance reviews, and resourc
 
 # Key Insights
 
-- Significant performance disparities exist within Team Melvin and Team Celia, with top-performing agents generating 2–3× higher total sales and number of sales than their lower-performing peers. In Q4, Team Melvin’s top agent closed $358K with ~60% conversion, while the lowest performer closed $42K with < 52% conversion, indicating uneven execution and skill gaps within teams.
-- Violet (Cara’s team) closed 122 deals but generated only $123K in total sales, resulting in a significantly lower average deal value compared to peers, resulting in a significantly lower average deal value than peers, suggesting a focus on low-value or poorly qualified opportunities.
+- Large performance gaps exist within Team Melvin and Team Celia, where top agents generate 2–3× higher sales and deal volume than lower performers. In Q4, Team Melvin’s top agent closed $358K at 60% conversion, compared to $42K and 51% conversion of the lowest performer, indicating uneven execution and skill gaps within teams.
+- Violet (Cara’s team) closed 122 deals but generated only $123K in total sales, resulting in a very low average deal value, suggesting over-focus on low-value or weakly qualified opportunities.
 - Lajuana (Dustin’s team) recorded a significant low conversion rate of only 54% while Hayden (Celia's team) reached a highest rate of 70% throughout the year, highlighting substantial differences in qualification quality and closing effectiveness.
 - GTX Pro and GTX Plus Pro consistently account for the majority of high-value closed deals across multiple regions, with $3.5M and $2.6M respectively , outperforming other product series in both revenue contribution and win consistency.
 - 2000 high-value opportunities remain in an “Engaging” stage for extended periods, including deals initiated as early as 2016, creating delays in revenue realisation and reducing forecast reliability.
