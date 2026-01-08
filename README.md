@@ -225,7 +225,7 @@ This page is valuable for leadership reporting, performance reviews, and resourc
 - Close performance gaps within teams by setting benchmark KPIs based on top performers and using them as coaching targets for lower-performing agents.
 - Shift focus from deal volume to deal value by introducing minimum average deal value targets alongside deal count goals, ensuring agents prioritise higher-quality opportunities rather than maximising volume alone.
 - Improve conversion rates by tightening opportunity qualification rules (e.g. requiring clear budget, decision-maker, and timeline) and conducting regular reviews of lost deals to identify common failure points.
-- Actively manage stalled opportunities by flagging deals that remain in the same stage beyond a defined time threshold and requiring action plans or escalation decisions.
+- Introduce time-based rules to convert, drop, or escalate deals that remain too long in the same stage.
 - Reduce long sales cycles by analysing deals with extended closing times, identifying common bottlenecks, and reallocating effort toward faster-closing, higher-value opportunities.
 
 
